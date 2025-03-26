@@ -1,0 +1,67 @@
+.AboutInfoContainer {
+  max-width: 100vw;
+  overflow: hidden;
+
+  .info {
+    padding: 2rem;
+    margin: 2rem;
+
+    p {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+
+  .approach {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 75vh;
+    overflow: hidden;
+
+    .approachBg {
+      background: url("/assets/about/approach.webp") center/cover no-repeat
+        border-box;
+      position: relative;
+    }
+  }
+
+  .leafBg {
+    background: url("/assets/about/leaves.webp") center/cover no-repeat fixed
+      border-box;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .madeToLastContainer {
+    grid-template-columns: 55% 45%;
+    .madeToLastBg {
+      background: url("/assets/about/madeToLast.webp") bottom/cover no-repeat
+        border-box;
+      position: relative;
+    }
+  }
+
+  .last {
+    background: url("/assets/about/last.webp") center/cover no-repeat fixed
+      border-box;
+    position: relative;
+    height: 60vh;
+  }
+}
+
+.centeringAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 4rem;
+  background-color: rgb(230, 222, 216);
+
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.05rem;
+  }
+}
