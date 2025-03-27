@@ -48,4 +48,13 @@
   a:hover::after {
     width: 100%; /* Expands fully on hover */
   }
+
+  .active {
+    color: var(--black);
+  }
+
+  .active::after {
+    width: 100%;
+    background-color: var(--black);
+  }
 }
