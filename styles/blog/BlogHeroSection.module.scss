@@ -29,7 +29,7 @@
 
         .blogCardsContainer{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 1rem;
         }
     }
@@ -52,19 +52,19 @@
 .blogCard{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
 
+    h3{
+        font-size: 1.15rem;
+    }
+
     .imgContainer{
-        width: 20rem;
-        height: 20rem;
+        width: 100%;
+        height: 25rem;
         position: relative;
         overflow: hidden;
     }
 
-    P,h3{
-        text-align: center;
-    }
 }
 
 .blogSocialSection{

@@ -8,7 +8,7 @@ const BlogCard = () => {
 
   // const BlogItem = ({ id, title }) => {
   //   const router = useRouter();
-  
+
   //   return (
   //     <div onClick={() => router.push(`/blog/${id}`)} style={{ cursor: "pointer" }}>
   //       <h3>{title}</h3>
@@ -17,15 +17,17 @@ const BlogCard = () => {
   // };
 
   return (
-    <div className={styles.blogCard}>
+    <Link href='blog/blog-post'>
+      <div className={styles.blogCard}>
         <div className={styles.imgContainer}>
-            <Image src={blogImg} alt='img' layout="fill" objectFit="cover" />
+          <Image src={blogImg} alt='img' layout="fill" objectFit="cover" />
         </div>
         <div>
-            <Link href={`/blog/blogpost`}><h3>Blog Title</h3></Link>
-            <p>//tag//</p>
+          <h3>Blog Title</h3>
+          <p>//tag//</p>
         </div>
-    </div>
+      </div>
+    </Link>
   )
 }
 
