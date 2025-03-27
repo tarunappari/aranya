@@ -2,12 +2,12 @@ import React from 'react'
 import styles from '@/styles/blog/BlogPost.module.scss'
 
 import Image from 'next/image'
-import postImg from '@/public/assets/blog/blogPost2.webp'
-import postImg2 from '@/public/assets/blog/blogPost3.webp'
+import postImg from '@/public/assets/blog/blogpost2.webp'
+import postImg2 from '@/public/assets/blog/blogpost3.webp'
 import Fb from '@/public/assets/icons/facebook.svg'
 import X from '@/public/assets/icons/twitter.svg'
 import Ln from '@/public/assets/icons/linkedin.svg'
-import Recommendation from './recommendation'
+import Recommendation from './Recommendation'
 
 
 const BlogPost = () => {
