@@ -175,14 +175,6 @@ textarea:focus {
   outline: none;
 }
 
-.whitebgButton {
-  padding: 0.5rem 4rem;
-  background-color: var(--white);
-  align-self: center;
-  cursor: pointer;
-  z-index: 9;
-}
-
 .carouselbtn {
   cursor: pointer !important;
 }
@@ -191,11 +183,32 @@ span {
   color: var(--para);
 }
 
-
-h1,h2,h3{
+h1,
+h2,
+h3 {
   color: var(--head);
 }
 
-p{
+p {
   color: var(--para);
+}
+
+.whitebgButton {
+  padding: 0.5rem 4rem;
+  background-color: var(--white);
+  align-self: center;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.blackBtn {
+  padding: 0.5rem 4rem;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  font-size: 0.9rem;
+  align-self: center;
+  cursor: pointer;
+  z-index: 9;
+  border-radius: 0.2rem;
 }

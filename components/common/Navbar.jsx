@@ -9,10 +9,10 @@ const Navbar = () => {
     return (
         <div className={styles.container}>
             <div>
-                <Link href="">Home</Link>
+                <Link href="/">Home</Link>
                 <Link href="">Shop</Link>
                 <Link href="/about">About</Link>
-                <Link href="">Blog</Link>
+                <Link href="/blog">Blog</Link>
             </div>
             <div className={styles.title}>
                 Aranya
