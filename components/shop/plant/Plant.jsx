@@ -14,6 +14,7 @@ import GiftSvg from '@/public/assets/icons/gift.svg'
 import ReturnSvg from '@/public/assets/icons/return.svg'
 import stylesAccordian from '@/styles/shop/Sidebar.module.scss'
 import PlantCard from '../PlantCard';
+import Cart from '@/components/cart/Cart';
 
 const Plant = () => {
   return (
@@ -66,7 +67,7 @@ const Plant = () => {
               <span>Size</span>
               <div className={styles.sizeContainer}>48x23x12</div>
             </div>
-            <button className='blackBtn'>ADD TO BAG</button>
+            <Cart />
           </div>
           <div className={styles.secondSection}>
             <div>

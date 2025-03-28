@@ -17,7 +17,7 @@ const Sidebar = () => {
             <Accordion type="single" collapsible className={`w-full ${styles.accordianContainer}`}>
                 <AccordionItem value="item-1" className={styles.accordianItem} >
                     <AccordionTrigger className={styles.accordianTrigger}>Category</AccordionTrigger>
-                    <AccordionContent className={styles.accordionContent}>
+                    <AccordionContent className={styles.accordionContentInSidebar}>
                         <div>
                             <input type='checkbox' />
                             <p>Category 1</p>
@@ -47,7 +47,7 @@ const Sidebar = () => {
                 <div className={styles.line}></div>
                 <AccordionItem value="item-2" className={styles.accordianItem} >
                     <AccordionTrigger className={styles.accordianTrigger}>Color</AccordionTrigger>
-                    <AccordionContent className={styles.accordionContent}>
+                    <AccordionContent className={styles.accordionContentInSidebar}>
                         <div className={styles.colorsContainer}>
                             <div>
                                 <span style={{ backgroundColor: 'rgba(26, 26, 26, 1)' }}></span>
