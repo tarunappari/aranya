@@ -1,9 +1,16 @@
+import Footer from '@/components/common/Footer';
+import Navbar from '@/components/common/Navbar';
+import Plant from '@/components/shop/plant/Plant';
 import React from 'react'
 
-const plant = () => {
+const page = () => {
   return (
-    <div>plant</div>
+    <div>
+      <Navbar />
+      <Plant />
+      <Footer />
+    </div>
   )
 }
 
-export default plant;
+export default page;

@@ -212,3 +212,22 @@ p {
   z-index: 9;
   border-radius: 0.2rem;
 }
+
+
+.imgContainerr{
+  width: 100%;
+  height: 24rem;
+  position: relative;
+  overflow: hidden;
+
+  & > div{
+      position: absolute;
+      z-index: 9;
+      font-size: 0.9rem;
+      background-color: var(--white);
+      top: 1rem;
+      left: 1rem;
+      color: rgba(208, 2, 27, 1);
+      padding:0.25rem 0.5rem;
+  }
+}
