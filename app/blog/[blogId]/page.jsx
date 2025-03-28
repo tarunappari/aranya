@@ -14,6 +14,7 @@ const blog = () => {
             <BlogCard />
             <BlogCard />
             <BlogCard />
+            <BlogCard />
         </div>
         <Footer />
     </div>

@@ -194,6 +194,14 @@ p {
   color: var(--para);
 }
 
+img,svg{
+  transition: 0.2s all;
+}
+
+img:hover,svg:hover{
+  transform: scale(1.05);
+}
+
 .whitebgButton {
   padding: 0.5rem 4rem;
   background-color: var(--white);
@@ -212,6 +220,10 @@ p {
   cursor: pointer;
   z-index: 9;
   border-radius: 0.2rem;
+}
+
+.imgContainer{
+  overflow: hidden;
 }
 
 .imgContainerr {

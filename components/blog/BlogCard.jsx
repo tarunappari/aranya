@@ -20,7 +20,7 @@ const BlogCard = () => {
     <Link href='blog/blog-post'>
       <div className={styles.blogCard}>
         <div className={styles.imgContainer}>
-          <Image src={blogImg} alt='img' layout="fill" objectFit="cover" />
+          <Image src={blogImg} alt='img' layout="fill" objectFit="cover" objectPosition='center'/>
         </div>
         <div>
           <h3>Blog Title</h3>

@@ -27,10 +27,10 @@ const Favourites = () => {
                                 <div className="p-1">
                                     <div className={styles.favCard}>
                                         <div className={styles.imgContainer}>
-                                            <Image src={favImg} alt='plant' />
+                                            <Image src={favImg} alt='plant'  />
                                         </div>
                                         <div className={styles.favInfo}>
-                                            <div style={{paddingTop:'0.5rem'}}>
+                                            <div style={{ paddingTop: '0.5rem' }}>
                                                 <p>Plant & Pot</p>
                                                 <p>$60</p>
                                             </div>

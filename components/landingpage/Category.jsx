@@ -6,6 +6,7 @@ import WhiteBgButton from '../common/WhiteBgButton'
 
 
 import majorCat from '@/public/assets/landingpage/category/majorCat.jpg'
+import FadeInWhenVisible from '../animations/FadeInWhenVisible'
 
 const Category = () => {
     return (
@@ -14,66 +15,68 @@ const Category = () => {
                 <h1>Shop by Category</h1>
             </div>
             <div className={styles.categoriesListCards}>
-                <div className={styles.categoryCard}>
+                <FadeInWhenVisible className={styles.categoryCard}  direction = "bottom" delay = {0}>
                     <div className="imgContainer">
                         <Image src={categoryImg} alt='cardImg' />
                     </div>
                     <p>Plastic</p>
-                </div>
-                <div className={styles.categoryCard}>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible className={styles.categoryCard} direction = "bottom" delay = {0.25}>
                     <div className="imgContainer">
                         <Image src={categoryImg} alt='cardImg' />
                     </div>
                     <p>Ceramic</p>
-                </div>
-                <div className={styles.categoryCard}>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible className={styles.categoryCard} direction = "bottom" delay = {0.5}>
                     <div className="imgContainer">
                         <Image src={categoryImg} alt='cardImg' />
                     </div>
                     <p>Metal</p>
-                </div>
-                <div className={styles.categoryCard}>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible className={styles.categoryCard} direction = "bottom" delay = {0.75}>
                     <div className="imgContainer">
                         <Image src={categoryImg} alt='cardImg' />
                     </div>
                     <p>Hanging</p>
-                </div>
-                <div className={styles.categoryCard}>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible className={styles.categoryCard} direction = "bottom" delay = {1}>
                     <div className="imgContainer">
                         <Image src={categoryImg} alt='cardImg' />
                     </div>
                     <p>plants</p>
-                </div>
-                <div className={styles.categoryCard}>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible className={styles.categoryCard} direction = "bottom" delay = {1.25}>
                     <div className="imgContainer">
                         <Image src={categoryImg} alt='cardImg' />
                     </div>
                     <p>Self Watering</p>
-                </div>
+                </FadeInWhenVisible>
             </div>
 
             <div className={styles.majorCategoryList}>
-                <div className={styles.majorCategoryCard}>
+                <FadeInWhenVisible className={styles.majorCategoryCard} direction = "left" delay = {0}>
                     <div className={styles.cardInfo} >
                         <h1>New Arrivals</h1>
                         <WhiteBgButton text={'SHOP THE LATEST'} />
                     </div>
-                    <Image src={majorCat} alt='img' />
-                </div>
-                <div className={styles.majorCategoryCard}>
+                    <div className="majorCatImgContainer">
+                        <Image src={majorCat} alt='img' />
+                    </div>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible className={styles.majorCategoryCard} direction = "left" delay = {0.25}>
                     <div className={styles.cardInfo} >
                         <h1>Best-Sellers</h1>
                         <WhiteBgButton text={'SHOP YOUR FAVOURITES'} />
                     </div>
                     <Image src={majorCat} alt='img' />
-                </div>
-                <div className={styles.majorCategoryCard}>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible className={styles.majorCategoryCard} direction = "left" delay = {0.5}>
                     <div className={styles.cardInfo} >
                         <h1>Gifting</h1>
                         <WhiteBgButton text={'SHOP OCCASION'} />
                     </div>
                     <Image src={majorCat} alt='img' />
-                </div>
+                </FadeInWhenVisible>
             </div>
         </div>
     )

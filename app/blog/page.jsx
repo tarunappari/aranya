@@ -4,6 +4,7 @@ import WhiteBgButton from '@/components/common/WhiteBgButton';
 import React from 'react'
 import styles from '@/styles/blog/BlogHeroSection.module.scss'
 import Footer from '@/components/common/Footer';
+import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible';
 
 const Blog = () => {
   return (
@@ -11,8 +12,12 @@ const Blog = () => {
       <Navbar />
       <BlogHeroSection />
       <div className={styles.blogSocialSection}>
-        <h1>Follow us on social for more</h1>
-        <WhiteBgButton text={'//Instagram-Handle//'} />
+        <FadeInWhenVisible>
+          <h1>Follow us on social for more</h1>
+        </FadeInWhenVisible>
+        <FadeInWhenVisible effect='bounce' delay={0.25}>
+          <WhiteBgButton text={'//Instagram-Handle//'} />
+        </FadeInWhenVisible>
       </div>
       <Footer />
     </div>

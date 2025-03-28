@@ -15,14 +15,8 @@
   .approach {
     display: grid;
     grid-template-columns: 40% 60%;
-    height: 75vh;
+    height: 65vh;
     overflow: hidden;
-
-    .approachBg {
-      background: url("/assets/about/approach.webp") center/cover no-repeat
-        border-box;
-      position: relative;
-    }
   }
 
   .leafBg {
@@ -35,11 +29,6 @@
 
   .madeToLastContainer {
     grid-template-columns: 55% 45%;
-    .madeToLastBg {
-      background: url("/assets/about/madeToLast.webp") bottom/cover no-repeat
-        border-box;
-      position: relative;
-    }
   }
 
   .last {
@@ -47,6 +36,14 @@
       border-box;
     position: relative;
     height: 60vh;
+  }
+
+  .aboutInfoImgContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
   }
 }
 
