@@ -10,6 +10,7 @@ import {
 
 import favImg from '@/public/assets/landingpage/fav.webp'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Favourites = () => {
@@ -25,18 +26,20 @@ const Favourites = () => {
                         {Array.from({ length: 8 }).map((_, index) => (
                             <CarouselItem key={index} className="pl-3 md:basis-1/3 lg:basis-1/4">
                                 <div className="p-1">
-                                    <div className={styles.favCard}>
-                                        <div className={styles.imgContainer}>
-                                            <Image src={favImg} alt='plant'  />
-                                        </div>
-                                        <div className={styles.favInfo}>
-                                            <div style={{ paddingTop: '0.5rem' }}>
-                                                <p>Plant & Pot</p>
-                                                <p>$60</p>
+                                    <Link href={'/shop/plantName'}>
+                                        <div className={styles.favCard}>
+                                            <div className={styles.imgContainer}>
+                                                <Image src={favImg} alt='plant' />
                                             </div>
-                                            <div className={styles.color}>Colour</div>
+                                            <div className={styles.favInfo}>
+                                                <div style={{ paddingTop: '0.5rem' }}>
+                                                    <p>Plant & Pot</p>
+                                                    <p>$60</p>
+                                                </div>
+                                                <div className={styles.color}>Colour</div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             </CarouselItem>
                         ))}

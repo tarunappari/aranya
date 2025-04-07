@@ -17,7 +17,7 @@ const BlogCard = () => {
   // };
 
   return (
-    <Link href='blog/blog-post'>
+    <Link href='/blog/blog-post'>
       <div className={styles.blogCard}>
         <div className={styles.imgContainer}>
           <Image src={blogImg} alt='img' layout="fill" objectFit="cover" objectPosition='center'/>

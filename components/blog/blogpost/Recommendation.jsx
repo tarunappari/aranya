@@ -12,6 +12,7 @@ import BlackBtn from '@/components/common/BlackBtn'
 
 import Image from 'next/image'
 import favImg from '@/public/assets/landingpage/fav.webp'
+import Link from 'next/link'
 
 
 const Recommendation = () => {
@@ -24,18 +25,20 @@ const Recommendation = () => {
                         {Array.from({ length: 8 }).map((_, index) => (
                             <CarouselItem key={index} className="pl-3 md:basis-1/3 lg:basis-1/4">
                                 <div className="p-1">
-                                    <div className={carouselStyles.favCard}>
-                                        <div className={carouselStyles.imgContainer}>
-                                            <Image src={favImg} alt='plant' />
-                                        </div>
-                                        <div className={carouselStyles.favInfo}>
-                                            <div style={{ paddingTop: '0.5rem' }}>
-                                                <p>Plant & Pot</p>
-                                                <p>$60</p>
+                                    <Link href={'/shop/plantDetails'}>
+                                        <div className={carouselStyles.favCard}>
+                                            <div className={carouselStyles.imgContainer}>
+                                                <Image src={favImg} alt='plant' />
                                             </div>
-                                            <div className={carouselStyles.color}>Colour</div>
+                                            <div className={carouselStyles.favInfo}>
+                                                <div style={{ paddingTop: '0.5rem' }}>
+                                                    <p>Plant & Pot</p>
+                                                    <p>$60</p>
+                                                </div>
+                                                <div className={carouselStyles.color}>Colour</div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             </CarouselItem>
                         ))}
@@ -44,7 +47,9 @@ const Recommendation = () => {
                     <CarouselNext className={'carouselbtn'} />
                 </Carousel>
             </div>
-            <BlackBtn text={'Shop Now'} />
+            <Link href={'/shop'}>
+                <BlackBtn text={'Shop Now'} />
+            </Link>
         </div>
     )
 }

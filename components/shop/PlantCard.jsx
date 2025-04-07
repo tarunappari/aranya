@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const PlantCard = () => {
     return (
-        <Link href='shop/plantName'>
+        <Link href='/shop/plantName'>
             <div className={styles.card}>
                 <div className={styles.imgContainer}>
                     <div>
